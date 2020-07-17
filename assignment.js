@@ -3,12 +3,13 @@
 
 function feetToMile(feet) {
         if (feet <= 0) {
-            return "invalid or negative input"
+            return " negative input, please resubmit a valid value"
     } else {
         return feet/5280;
     }
    }
 console.log(feetToMile(5280));
+
 
 // woodCalculator function requires at least 3 parameter, from 0 to upword.
 
@@ -18,10 +19,8 @@ function woodCalculator(numberOfChair, numberOfTable, numberOfBed) {
         return "invalid input // give at least 3 parameter from 0 to upword";
     }else{
     return (numberOfChair *1 ) + (numberOfTable * 3) + (numberOfBed * 5);
-
     }
 }
-
  console.log(woodCalculator(4,1,2));
 
 
@@ -47,7 +46,6 @@ function brickCalculator(numberOfBuildingFloor) {
 
 // tinyFriend Function 
 function tinyFriend(friendNameList) {
-
   if (Array.isArray(friendNameList)){
     let tinyName = friendNameList[0];
     for (let i = 0; i < friendNameList.length; i++) {
@@ -57,16 +55,10 @@ function tinyFriend(friendNameList) {
        }
           } 
     return tinyName;
-
   }
   else{
     return "please call tinyFriend function passing a array"
-
   }
-
-
 }
-
 let myFriendsName = ["Mohammad", "Abu", "Hanif", "Alamgir", "Jahangir"];
-
 console.log(tinyFriend(myFriendsName));
